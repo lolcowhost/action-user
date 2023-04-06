@@ -10,6 +10,8 @@ jobs:
       - id: foo
         uses: lolcowhost/cloudsmith-release-action@main
         with:
-          who-to-greet: 'Mona the Octocat'
+          artifact-name: 'action-user'
+          owner-name: 'red_mvn'
+          repository-name: 'lolcowhost'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
