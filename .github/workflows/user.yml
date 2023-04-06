@@ -10,6 +10,7 @@ jobs:
       - id: foo
         uses: lolcowhost/cloudsmith-release-action@main
         with:
+          api-key: ${{ secrets.CLOUDSMITH_API_KEY }}
           artifact-name: 'action-user'
           owner-name: 'red_mvn'
           repository-name: 'lolcowhost'
